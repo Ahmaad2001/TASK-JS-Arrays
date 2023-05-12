@@ -75,9 +75,22 @@ console.log(eliminateTeam());
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  // Your code here
+  if (fruits.length % 2 === 0) {
+    return fruits.slice(2);
+  } else {
+    return (a = []);
+  }
 }
-
+console.log(secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]));
+console.log(
+  secondHalfOfArrayIfItIsEven([
+    "apple",
+    "orange",
+    "banana",
+    "kiwi",
+    "blueberry",
+  ])
+);
 /**
  * youGottaCalmDown(shout):
  * - receives a string `shout`
@@ -92,6 +105,4 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use number method .indexOf()
  * - Use string method .slice()
  */
-function youGottaCalmDown(shout) {
-  // Your code here
-}
+function youGottaCalmDown(shout) {}
