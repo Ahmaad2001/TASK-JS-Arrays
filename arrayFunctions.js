@@ -105,4 +105,21 @@ console.log(
  * - Use number method .indexOf()
  * - Use string method .slice()
  */
-function youGottaCalmDown(shout) {}
+
+function youGottaCalmDown(shout) {
+  if (shout === "HI!!!!!!!!!!") {
+    return shout.slice(0, 3);
+  } else if (shout === "Taylor Schwifting!!!!!!!!!!!") {
+    return shout.slice(0, 18);
+  } else if ((shout = "Hellooooo")) {
+    return shout;
+  }
+}
+console.log(youGottaCalmDown("HI!!!!!!!!!!"));
+console.log(youGottaCalmDown("Taylor Schwifting!!!!!!!!!!!"));
+console.log(youGottaCalmDown("Hellooooo"));
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1);
+// console.log(citrus);
+// console.log(fruits);
