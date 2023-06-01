@@ -107,19 +107,13 @@ console.log(
  */
 
 function youGottaCalmDown(shout) {
-  if (shout === "HI!!!!!!!!!!") {
-    return shout.slice(0, 3);
-  } else if (shout === "Taylor Schwifting!!!!!!!!!!!") {
-    return shout.slice(0, 18);
-  } else if ((shout = "Hellooooo")) {
+  const shouting = shout.indexOf("!");
+  if (shouting === -1) {
     return shout;
+  } else {
+    return shout.slice(0, shouting + 1);
   }
 }
-console.log(youGottaCalmDown("HI!!!!!!!!!!"));
+console.log(youGottaCalmDown("Hi"));
 console.log(youGottaCalmDown("Taylor Schwifting!!!!!!!!!!!"));
 console.log(youGottaCalmDown("Hellooooo"));
-
-// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-// const citrus = fruits.slice(1);
-// console.log(citrus);
-// console.log(fruits);
